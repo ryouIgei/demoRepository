@@ -1,0 +1,27 @@
+{
+  "name": "demorepository",
+  "version": "1.0.0",
+  "description": "AI chat style customer support UI built with TypeScript and Vite",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vite": "^8.0.9"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryouIgei/demoRepository.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ryouIgei/demoRepository/issues"
+  },
+  "homepage": "https://github.com/ryouIgei/demoRepository#readme"
+}
