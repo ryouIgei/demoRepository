@@ -1,0 +1,165 @@
+h1 {
+  font-size: 1.6rem;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+
+.board {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s;
+  min-height: 200px;
+}
+
+.column.drag-over {
+  box-shadow: 0 0 0 2px #4f6ef7, 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.column-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1a1a2e;
+}
+
+.column-count {
+  background: #e8ecff;
+  color: #4f6ef7;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.card {
+  background: #f7f8ff;
+  border: 1.5px solid #e8ecff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: grab;
+  transition: box-shadow 0.15s;
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(79, 110, 247, 0.12);
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #2d2d3a;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.move-btn {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border: 1.5px solid #4f6ef7;
+  color: #4f6ef7;
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.move-btn:hover {
+  background: #4f6ef7;
+  color: #fff;
+}
+
+.delete-btn {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border: 1.5px solid #e74c3c;
+  color: #e74c3c;
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  margin-left: auto;
+}
+
+.delete-btn:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.add-area {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.add-area textarea {
+  resize: none;
+  padding: 8px 10px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.add-area textarea:focus {
+  border-color: #4f6ef7;
+}
+
+.add-area button {
+  padding: 7px;
+  background: #4f6ef7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-area button:hover {
+  background: #3a57d6;
+}
