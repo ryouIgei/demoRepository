@@ -1,14 +1,14 @@
 :root {
   --accent: #38bdf8;
   --accent-dark: #0ea5e9;
-  --accent-light: rgba(56, 189, 248, 0.15);
-  --accent-glow: rgba(56, 189, 248, 0.25);
-  --surface: #1e2230;
-  --surface-2: #252a38;
-  --bg: #171c28;
-  --border: rgba(255, 255, 255, 0.11);
-  --text: #f1f5f9;
-  --text-dim: #7c8fa6;
+  --accent-light: rgba(56, 189, 248, 0.18);
+  --accent-glow: rgba(56, 189, 248, 0.3);
+  --surface: #2a3a5c;
+  --surface-2: #324470;
+  --bg: #1e2d4a;
+  --border: rgba(255, 255, 255, 0.14);
+  --text: #ffffff;
+  --text-dim: #93adc8;
   --radius-lg: 14px;
   --radius-md: 8px;
   --header-h: 52px;
@@ -16,7 +16,7 @@
 
 /* layout */
 .app {
-  width: 1066px;
+  width: 1200px;
   height: 754px;
   display: flex;
   flex-direction: column;
