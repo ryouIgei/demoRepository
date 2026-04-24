@@ -16,8 +16,8 @@
 
 /* layout */
 .app {
-  width: 820px;
-  height: 580px;
+  width: 1025px;
+  height: 725px;
   display: flex;
   flex-direction: column;
   border-radius: 16px;
