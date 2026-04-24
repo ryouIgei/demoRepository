@@ -4,7 +4,7 @@ export function ChatHeader() {
       <div className="avatar bot-avatar">S</div>
       <div>
         <div className="header-name">社内サポート AI</div>
-        <div className="header-status">● オンライン</div>
+        <div className="header-status">オンライン</div>
       </div>
     </header>
   )
