@@ -1,0 +1,81 @@
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.logoIcon {
+  font-size: 24px;
+}
+
+.logoText {
+  font-size: 15px;
+  font-weight: 700;
+  color: #212529;
+  letter-spacing: 0.02em;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: #868e96;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 20px 16px 8px;
+  margin: 0;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0 8px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.categoryItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #495057;
+  text-align: left;
+  transition: background 0.15s, color 0.15s;
+}
+
+.categoryItem:hover {
+  background: #e9ecef;
+  color: #212529;
+}
+
+.categoryItem.active {
+  background: #e7f5ff;
+  color: #1971c2;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
