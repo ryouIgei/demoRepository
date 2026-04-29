@@ -1,0 +1,35 @@
+import type { Message } from '../types';
+import { formatTime } from '../utils';
+
+interface MessageListProps {
+  messages: Message[];
+  typing: boolean;
+  bottomRef: React.RefObject<HTMLDivElement | null>;
+}
+
+export function MessageList({ messages, typing, bottomRef }: MessageListProps) {
+  return (
+    <div className="message-list">
+      {messages.map((msg) => (
+        <div key={msg.id} className={`message message--${msg.role}`}>
+          {msg.role === 'bot' && <div className="message-avatar">🤖</div>}
+          <div className="message-body">
+            <p className="message-text">{msg.text}</p>
+            <span className="message-time">{formatTime(msg.timestamp)}</span>
+          </div>
+        </div>
+      ))}
+      {typing && (
+        <div className="message message--bot">
+          <div className="message-avatar">🤖</div>
+          <div className="message-body">
+            <div className="typing-indicator">
+              <span /><span /><span />
+            </div>
+          </div>
+        </div>
+      )}
+      <div ref={bottomRef} />
+    </div>
+  );
+}
